@@ -1,11 +1,5 @@
 import { useHttp } from "../hooks/http.hook";
 
-
-interface IMarvelService {
-	clearError: () => void,
-
-}
-
 const useMarvelService = () => {
 	const { loading, request, error, clearError } = useHttp();
 
