@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Skeleton from '../skeleton/Skeleton';
@@ -18,7 +17,7 @@ const CharInfo = (props) => {
 
     useEffect(() => {
         updateChar();
-    }, []);
+    }, [updateChar]);
 
     useEffect(() => {
         if (props.charId !== prevProps.charId) {
